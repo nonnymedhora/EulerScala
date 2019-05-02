@@ -14,7 +14,7 @@ trait Prime {
     } else {
       val sq = Math.sqrt(number).toInt
 
-      for (i <- 2 to (sq /*- 1*/)) {
+      for (i <- 2 to sq) {
         if (number % i == 0) {
           isPrime = false
         }
